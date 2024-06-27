@@ -1,0 +1,53 @@
+.App {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  background: #c1e37a;
+  display: grid;
+  grid-template-rows: 14% 90%;
+  &-header{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+  }
+  &-logo{
+    width: auto;
+    height: 100%;
+  }
+  &-content{
+    display: grid;
+    place-items: center;
+    &-btn{
+      width: 10rem;
+      height: 3rem;
+      background-color: orange;
+      color: white;
+      border-width: 1px;
+    }
+  }
+}
+.form{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  gap: 2rem 4%;
+  height: 100%;
+  /* place-content: center; */
+  justify-items: baseline;
+  padding: 10rem 2rem;
+  &-field{
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    label{
+      width: 45%;
+    }
+    input{
+      width: 45%;
+      height: 50%;
+    }
+    textarea{
+      width: 45%;
+    }
+  }
+}
