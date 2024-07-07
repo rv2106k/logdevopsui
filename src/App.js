@@ -15,7 +15,7 @@ function App() {
     ))
   }
   const handleSubmit = () =>
-    fetch("http://localhost:9020/student/api/register", {
+    fetch("http://192.168.1.20:9020/student/api/register", {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)
